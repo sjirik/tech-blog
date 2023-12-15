@@ -1,0 +1,310 @@
+:root {
+  --prim: #fffd97;
+  --tert: #f63633;
+  --light-dark: #0c9403;
+  --dark: #6a0000;
+  --border-radius: 0.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--prim);
+  margin: 0;
+  padding: 0;
+  font-family: "Times", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
+  color: var(--dark);
+  line-height: 1.15;
+}
+
+h2 a:visited {
+  color: var(--tert);
+}
+
+h2 a {
+  color: var(--prim);
+}
+
+header {
+  margin-top: 60px;
+}
+
+main {
+  margin: 18px auto;
+  width: 93%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #fb4e4e;
+    background: #f8ec7f;
+    margin: 0 0 7px;
+    padding: 12px;
+}
+
+.card-header h2 {
+  color: var(--prim);
+}
+
+.btn {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 7px 6px;
+  width: 100%;
+  display: block;
+  margin: 4px 0;
+  border-radius: var(--border-radius);
+  color: var(--prim);
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 2px 2px var(--dark);
+  transform: translate(-1px, -1px);
+}
+
+.btn:hover {
+  color: var(--prim);
+  background-color: var(--tert);
+  transform: translate(0, 0);
+  box-shadow: 3px 3px var(--dark);
+}
+
+.btn-inline {
+  display: inline;
+}
+
+.li-inline {
+  display: inline;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: var(--dark);
+}
+
+.nav-item {
+  margin: 0 35px;
+}
+
+.nav-item a {
+  color: var(--prim);
+}
+
+.hero {
+  padding: 3% 4%;
+  background-color: var(--dark);
+  color: var(--prim);
+}
+
+.hero p {
+  max-width: 75%;
+}
+
+.app-title {
+  font-size: 3rem;
+  background-color: var(--prim);
+  color: var(--dark);
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 5px 6px var(--light-dark);
+}
+
+.app-title a {
+  color: var(--dark);
+}
+
+.list-group {
+  padding: 1%;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  padding: 1.5%;
+  border-radius: var(--border-radius);
+  background-color: var(--light-dark);
+  color: var(--prim);
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background-color: var(--dark);
+}
+
+.footer a {
+  display: inline-block;
+  padding: 1em;
+  margin-bottom: .5em;
+  background-color: var(--dark);
+  color: var(--prim);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.card {
+  margin: 0 0 22px 0;
+  border: 4px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+
+.card-header {
+  color: var(--prim);
+  background-color: var(--dark);
+  padding: 1%;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-body {
+  padding: 1%;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+.min-100-vh {
+  min-height: 100vh;
+}
+
+.min-100-vw {
+  min-width: 100vw;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-auto {
+  flex-grow: 1;
+}
+
+.col-1 {
+  flex: 0 0 calc(100% * 1 / 12 - 2%);
+}
+
+.col-2 {
+  flex: 0 0 calc(100% * 2 / 12 - 2%);
+}
+
+.col-3 {
+  flex: 0 0 calc(100% * 3 / 12 - 2%);
+}
+
+.col-4 {
+  flex: 0 0 calc(100% * 4 / 12 - 2%);
+}
+
+.col-5 {
+  flex: 0 0 calc(100% * 5 / 12 - 2%);
+}
+
+.col-6 {
+  flex: 0 0 calc(100% * 6 / 12 - 2%);
+}
+
+.col-7 {
+  flex: 0 0 calc(100% * 7 / 12 - 2%);
+}
+
+.col-8 {
+  flex: 0 0 calc(100% * 8 / 12 - 2%);
+}
+
+.col-9 {
+  flex: 0 0 calc(100% * 9 / 12 - 2%);
+}
+
+.col-10 {
+  flex: 0 0 calc(100% * 10 / 12 - 2%);
+}
+
+.col-11 {
+  flex: 0 0 calc(100% * 11 / 12 - 2%);
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
